@@ -375,7 +375,7 @@ def display_leads(leads):
     # Remove processed leads from session state
     if leads_to_remove:
         st.session_state.pending_leads = [lead for lead in st.session_state.pending_leads if lead not in leads_to_remove]
-        st.experimental_rerun()  # Rerun the app to refresh the UI
+        st.rerun()  # Rerun the app to refresh the UI
 
 # Scrape button
 if st.sidebar.button("Start Scraping"):
