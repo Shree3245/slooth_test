@@ -1,0 +1,7 @@
+# ignore /myenv
+myenv/
+.env
+slooth_env/
+# ignore /venv
+venv/
+

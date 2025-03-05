@@ -1,0 +1,17 @@
+column_name,data_type,constraints
+id,text,primary key
+title,text,not null
+url,text,unique not null
+description,text,
+raw_description,text,
+source,text,
+company,text,not null
+category,text,
+timestamp,timestamp with time zone,
+vector_embedding,vector(1536),
+created_at,timestamp with time zone,default timezone('utc'::text, now())
+relevance_score,integer,
+relevance_explanation,text,
+value_types,text,
+action_items,text,
+csm_value_explanation,text, 
